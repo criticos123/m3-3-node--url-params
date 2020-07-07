@@ -1,0 +1,9 @@
+<%- include('../partials/header') %>
+<div class="main">
+    <ol>
+        <% for(let i=0;i<top50.length;i++) {%>
+            <%- include('../partials/song',{song:top50[i]})%>
+        <% } %> 
+    </ol>
+</div>
+<%- include('../partials/footer') %>
